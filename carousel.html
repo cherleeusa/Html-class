@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Carousel</title>
+  <link rel="stylesheet" href="./assets/stylesheets/slick.css">
+  <link rel="stylesheet" href="./assets/stylesheets/slick-theme.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/stylesheets/styles.css">
+
+
+
+  <style>
+    body {
+      background: #fff;
+    }
+
+    .your-class {
+      width: 500px;
+      margin: auto;
+    }
+
+    .your-class img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .slick-arrow {
+      background: #000;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+
+
+        <a class="navbar-brand" href="index.html#home" style="color:black;font-size:30pt; margin:5px,100px,5px,5px;">Billie Eilish</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"></li>
+        <li><a href="About.html#About">About</a></li>
+        <li><a href="carousel.html#Albums">Albums</a></li>
+        <li><a href="Media.html#Media">Media</a></li>
+        <li><a href="Shop.html#Shop">Shop</a></li>
+        <li><a href="Tour.html#Tour">Tour</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="your-class">
+    <div>
+      <img src="./assets/images/album/media-1.png" alt="media-1">
+      <ul>
+
+
+        <li style="font-size:20px">&Burn
+        12/14/2017</li>
+        <li>
+        1.&burn(with Vince Staples)(2:59)
+        </li>
+
+      </ul>
+    </div>
+    <div>
+      <img src="./assets/images/album/media-2.png" alt="media-2">
+<ul>
+  <li style="font-size:20px">
+  When we all fall asleep, where do we go.
+  3/28/2019
+  </li>
+  <li>
+  1. Wish you were Gay(4:23)
+  </li>
+  <li>
+  2. Bad Guy(3:45)
+  </li>
+  <li>
+  3. Bury a friend(4:22)
+  </li>
+</ul>
+
+
+    </div>
+    <div>
+      <img src="./assets/images/album/media-3.png" alt="media-3">
+<ul>
+<li style="font-size:20px">Lovely
+4/19/2018</li>
+<li>1.Lovely(4:23)</li>
+
+</ul>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="./assets/javascripts/slick.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.your-class').slick({
+          autoplay: true,
+          autoplaySpeed: 5000,
+          dots: false,
+          //  centerMode:true,
+          sidesToShow: 3,
+          adaptiveHeight: true
+        });
+      });
+    </script>
+
+
+</body>
+
+</html>
